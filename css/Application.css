@@ -14,11 +14,55 @@ body {
   line-height: 1.5;
 }
 
+.navbar-dark {
+  color: #ffffff;
+}
+
+.bi-facebook, .bi-whatsapp, .bi-instagram {
+  color: #7171f1;
+}
+
+.navbar {
+  background-color: #35355c;
+}
+
+.container-fluid-top {
+  margin: 2%;
+}
+
+.onelogo, .twologo {
+  width: 15%;
+  border-radius: 50%;
+}
+
+.twologo {
+  position: absolute;
+  justify-content: center;
+  left: 10em;
+  width: 14%;
+}
+
+#sub {
+  text-align: center;
+  right: 10em;
+}
+
 /* Form pesquisar */
 .d-flex {
   position: absolute;
-  right: 2%;
-  top: 0.5rem;
+  max-width: 50%;
+  right: 11%;
+  top: 5em;
+}
+
+/* start do titulo, subtitulo e imagem do mapa */
+.clearfix {
+  background-color: #ffffff;
+  margin-top: 0;
+}
+
+.img-plan {
+  float: right;  
 }
 
 /* Dimensões das imagens carousel */
@@ -44,40 +88,22 @@ body {
 
 /* Apresentação da página */
 .container_top {
-  border-radius: 4.25rem;
-  margin-top: 5%;
   margin-bottom: 5%;
-  margin-left: 30%;
-  margin-right: 30%;
-  text-align-last: center;
-  border-top-style: solid rgb(135, 0, 197);
-  border-bottom-style: solid rgb(135, 0, 197);
-  max-width: 70%;
+  text-align: center;
 }
 
 /* Título */
 .titlepage {
-  text-align: right;
+  text-align: center;
+  height: 10vh;
   font-family: EB Garamond;
   margin: 0;
-  margin-top: 1.50rem;
   color: rgb(0, 0, 0);
   border-radius: 5rem;
 }
 
-/* Subtítulo */
-.subtitle {
-  text-align: center;
-  font-family: Libre Baskerville;
-}
-
-/* ... */
-.titleandsubtitle {
-  margin-bottom: 10%;
-  padding: 10px;
-  padding-top: 50px;
-  background-repeat: no-repeat;
-  background-size: auto;
+.row {
+  justify-content: space-between;
 }
 
 /* Titulo e texto dos cards */
@@ -102,7 +128,7 @@ body {
   border-color: #35355c;
   background-color: #ffffffd1;
 
-  transition: 1.2s ease; /* Tempo de mudança */
+  transition: 0.3s ease; /* Velocidade de mudança */
   cursor: pointer; /* Ação de passar o mouse */
 
   margin-top: 4rem;
@@ -110,8 +136,8 @@ body {
 
 /* Ao passar o mouse sobre os cards */
 .card:hover {
-  transform: scale(1.2);
-  box-shadow: 10px 25px 50px rgb(47 0 150);
+  transform: scale(1.1);
+  box-shadow: 15px 25px 10px #7171f1;
 }
 
 /* Conteiner... */
@@ -152,6 +178,7 @@ body {
   padding-top: 10px;
   padding-bottom: 1px;
   margin-top: 30rem;
-  border-style: solid;
+  border-style: none;
   color: #ffffff;
+  background-color: #35355c;
 }
