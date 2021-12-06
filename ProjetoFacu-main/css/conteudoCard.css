@@ -1,0 +1,62 @@
+* { /* configuração inicial do site */
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-image: url(../img/amazonia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar-dark {
+    color: #ffffff;
+}
+  
+.bi-facebook, .bi-whatsapp, .bi-instagram {
+    color: #7171f1;
+}
+  
+.navbar {
+    background-color: #35355c;
+}
+  
+.container-fluid-top {
+    margin: 2%;
+}
+  
+.onelogo, .twologo {
+    width: 15%;
+    border-radius: 50%;
+}
+  
+.twologo {
+    position: absolute;
+    justify-content: center;
+    left: 10em;
+    width: 14%;
+}
+  
+#sub {
+    text-align: center;
+    right: 10em;
+}
+
+
+  
+  /* Form pesquisar */
+.d-flex {
+    position: absolute;
+    max-width: 50%;
+    right: 11%;
+    top: 5em;
+}
+
+.album {
+    height: 50vh;
+    top: 10px;
+    background-color: steelblue;
+    border: solid;
+}
