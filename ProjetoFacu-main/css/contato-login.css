@@ -1,0 +1,189 @@
+* { /* configuração inicial do site */
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+  }
+  
+  /* Corpo da página */
+  body {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* https://www.holidayguru.nl/vakanties/vakantie-malediven-sun-island-resort/ */
+    /* URL background-image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: white;
+    line-height: 1.5;
+  }
+  
+  .navbar-dark {
+   height: 50px;
+  }
+  
+  .bi-facebook {
+    color: white;
+    margin-right: 20px;
+    margin-top: 5px;
+  }
+  
+  .bi-whatsapp {
+     color: white;
+     margin-right: 20px;
+     margin-top: 5px;
+  }
+  
+  .bi-instagram {
+    color: white;
+    margin-right: 60px;
+    margin-top: 5px;
+  }
+  
+  .navbar {
+    background-color: #54B7DE;
+  }
+  
+  .navbar  .container-fluid-top{
+    height: 60px;
+  }
+  
+  .navbar .nav-list li{
+     margin-top: 10px;
+  }
+  
+  .container-fluid-top {
+    margin: 2%;
+    height: 120px;
+  }
+  
+  .onelogo, .twologo {
+    width: 7.8%;
+    border-radius: 50%;
+    margin-top: -30px;
+  }
+  
+  .twologo {
+    position: absolute;
+    justify-content: center;
+    left: 10em;
+    width: 7%;
+  }
+  
+  #sub {
+    text-align: center;
+    right: 10em;
+  }
+  
+  /*----menu-----*/
+  .nav-list {
+    color:white;
+    float:right;
+    display: flex;
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 25px;
+  }
+  
+  .nav-list ul {
+    margin-top: 50px;
+  }
+  
+  .nav-list li {
+    list-style: none;  
+  }
+  
+  .nav-list a{
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    list-style: none;
+  }
+  
+  .nav-list a:hover{
+    list-style: none;
+    color: silver;
+    text-decoration: none;
+  }
+
+
+/* Imagens do carousel */
+#slides{
+    max-height: 500px;
+    overflow: hidden;
+  }
+  
+  /* Itens do carousel */
+  .carousel-item img{
+    height: 100%;  
+    width: 100%;  
+    position:relative;
+    top:.5;
+    margin-top:250px;
+  }
+
+
+  /* Rodapé */
+.container-fluid-footer {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    margin-top: 30rem;
+    border-style: none;
+    color: #ffffff;
+    background-color: #064F6B;
+    line-height: 10px;
+    text-align: center;
+  }
+
+
+  /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+  width:10px;
+  height: 10px;
+  }
+   
+  /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+  ::-webkit-scrollbar-track {
+  background:#333;
+  }
+   
+  /* aqui é a alça da barra, que demonstra a altura que você está na página
+  estou colocando uma cor azul clara nela*/
+  ::-webkit-scrollbar-thumb {
+  background: #2e9dd8;
+  }
+
+
+  /* degrade para a barra vertical */
+::-webkit-scrollbar-thumb {
+  background: #2e9dd8;
+  background: -moz-linear-gradient(top, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: -webkit-linear-gradient(top, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+  background: linear-gradient(to bottom, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+  }
+   
+  /* degrade para a barra horizontal com a direção do degrade alterada */
+  ::-webkit-scrollbar-thumb:horizontal {
+  background: #2e9dd8;
+  background: -moz-linear-gradient(left, #333333 0%, #3f69b1 25%, #2e9dd8 50%, #3f69b1 76%, #333333 100%);
+  background: -webkit-linear-gradient(left, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+  background: linear-gradient(to right, #333333 0%,#3f69b1 25%,#2e9dd8 50%,#3f69b1 76%,#333333 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#333333',GradientType=0 );
+  }
+
+  .scroll::-webkit-scrollbar {
+    width:10px;
+    height: 10px;
+    }
+     
+    .scroll::-webkit-scrollbar-track {
+    background:#333;
+    }
+     
+    .scroll::-webkit-scrollbar-thumb {
+    background: #2e9dd8;
+    }
