@@ -4,18 +4,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pontos Turísticos no Brasil</title>
-    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <title>Pontos Turísticos no Brasil</title>    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../css/contato-login.css">
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/contato-login.css">    
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
   </head>
 
 <body>
@@ -86,10 +87,9 @@
             </p>
         </div>
 
-      <!--FORMULÁRIO DE CADASTRO-->
+        <!--FORMULÁRIO DE CADASTRO-->
         <div id="cadastro">
           <h1>Cadastro</h1>
-
           <p>
             <label for="nome_cad">Nome</label>
             <input id="tx-nome" class="name" name="nome_cad" type="text" placeholder="nome" />
@@ -106,7 +106,7 @@
           </p>
 
           <p>
-            <input type="button" value="Cadastrar" onclick='Cadastrar()' />
+            <input type="button" value="Cadastrar" onclick="Cadastrar()"/>
           </p>
 
           <p class="link">
@@ -146,7 +146,8 @@
                 <span class="carousel-control-next-icon"></span>
               </a>
             </div>
-        </main>   
+        </main>
+
 <!-- Rodapé -->
   <footer class="container-fluid-footer" >
     <div class="foot-fluid" aling="border-bottom-width">
@@ -236,7 +237,10 @@
 </script>
 
     <!--------------menu responsivo-------------------->
- <script src="../js/mobile-navbar.js"></script>
+  <script src="../js/mobile-navbar.js"></script>
+
+            <!--Cadastrar e Login-->
+  <script src="../js/contato-login.js"></script>
 
 </body>
 </html>

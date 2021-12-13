@@ -205,7 +205,7 @@ font-family: 'Roboto', sans-serif;
 /* start do titulo, subtitulo e imagem do mapa */
 .clearfix {
   background-color: #ffffff;
-  margin-top: 0;
+  margin-top: 0px;
 }
 .clearfix > h1 {
   font-family: 'Montserrat', sans-serif;
@@ -215,6 +215,13 @@ font-family: 'Roboto', sans-serif;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #54B7DE;
+}
+
+.clearfix > p{
+  margin-bottom: 100px;
+  text-align: center;
+  color: #54B7DE;
+  font-size: 18px;
 }
 
 .img-plan {
@@ -347,6 +354,127 @@ font-family: 'Roboto', sans-serif;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/*formas de pagamento cartoes da pagina inicial*/
+       
+.formapg {
+   text-align: center;
+   margin-top: 100px;
+}
+
+.formapg img{
+    width: 500px; 
+}
+
+
+/*cards das regras*/
+
+main.cards-full {
+  display: flex;
+  padding: 32px;
+  margin-top: 120px;
+  justify-content:center;
+
+  }
+main.cards-full section.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 300px;
+  margin-left: 32px;
+  transform:none;
+}
+
+main.cards-full section.cards:first-child {
+  margin-left: 0;
+}
+
+main.cards-full section.cards .icon {
+  width: 64px;
+  height: 64px;
+}
+
+main.cards-full section.cards h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+main.cards-full section.cards span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+main.cards-full section.cards button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+main.cards-full section.cards.contacts button {
+  background: linear-gradient(to right, #9F66FF, #DFCBFF);
+}
+main.cards-full section.cards.shop button {
+  background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+}
+main.cards-full section.cards.about button {
+  background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+}
+
+main.cards-full section.cards.contacts {
+  box-shadow: 1px 1px 1px 2px black;
+}
+
+main.cards-full section.cards.contacts{
+  font-size: 18px;
+}
+
+main.cards-full section.cards.shop {
+  box-shadow: 1px 1px 1px 2px black;
+}
+
+
+main.cards-full section.cards.shop {
+  font-size: 18px;
+}
+
+main.cards-full section.cards.about {
+  box-shadow: 1px 1px 1px 2px black;
+}
+
+main.cards-full section.cards.about {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 720px) {
+  main.cards-full {
+      flex-direction: column;
+  }
+
+  main.cards-full section.cards {
+      margin-left: 0;
+      margin-bottom: 32px;
+  }
+
+  main.cards-full section.cards:last-child {
+      margin-bottom: 0;
+  }
+
+  main.cards-full section.cards button {
+      font-size: 70%;
+  }
+
+}
 
 /* Rodapé */
 .container-fluid-footer {
@@ -356,12 +484,23 @@ font-family: 'Roboto', sans-serif;
   margin-top: 30rem;
   border-style: none;
   color: #ffffff;
-  background-color: #064F6B;
+  background-color: #45A0C4;
   line-height: 10px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  margin-top: -100px;
 }
 
+.container-fluid-footer a{
+  color: white;
+  list-style: none;
+ 
+}
+
+.container-fluid-footer:hover a{
+  color: greenyellow;
+
+}
 
 
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical

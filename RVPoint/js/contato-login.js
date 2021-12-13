@@ -27,3 +27,45 @@ function enviarInformacoesDosContatos() { //função de enviar a mensagem da pá
         })
     }
 }
+
+function Cadastrar() {
+    var nome = document.getElementById('tx-nome').value
+    var email = document.getElementById('tx-email').value
+    var senha = document.getElementById('tx-senha').value
+    if (nome.length == 0 || email.length == 0 || senha.length == 0) {
+        swal({ icon: "warning", title: "Preencha todos os campos" })
+    } else {
+        $.post('../php/cadastro.php',{
+            nome : nome,
+            email : email,
+            senha : senha
+        },function(resposta){
+            if(resposta == "success"){
+                swal({title:"Cadastro efetuado com sucesso",icon:"success"}).then(() => window.location.reload());
+            }else if(resposta == "existente"){
+                swal({ title: "Um usuario com o mesmo email ja existe", icon: "info" })
+            }else{
+                swal({ title: "Houve um erro incomum", icon: "error" })
+            }
+        })
+    }
+}
+
+function login(){
+    var email = document.getElementById('txt-email').value
+    var senha = document.getElementById('txt-senha').value
+    if (email.length == 0 || senha.length == 0){
+        swal({ icon: "warning", title: "Preencha todos os campos" })
+    } else {
+        $.post('../php/login.php', {
+            email : email,
+            senha : senha
+        },function(resposta){
+            if(resposta == "success"){
+                swal({title:"Login efetuado com sucesso", icon:"success"}).then(() => window.location.href='compra.html');
+            }else if(resposta == 'usuario_ou_senha_incorreto'){
+                swal({title: "Usuario ou Senha incorreto", icon:"error" })
+            }
+        })
+    }
+}
